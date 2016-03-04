@@ -1,0 +1,22 @@
+posts:
+
+[ ] self posts
+[ ] ...that are questions
+[ ] ...with empty selftext
+[ ] ...sorted by most common
+
+[ ] ...with responses (as in [2] below)
+[ ] ...sorted by most common
+
+comments:
+
+[1]
+
+  [ ] questions
+  [ ] ...sorted by most common
+
+[2]
+
+  [ ] comment-response pairs as table
+  [ ] ...where response is a question
+  [ ] ...sorted by most common
