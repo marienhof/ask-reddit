@@ -1,22 +1,49 @@
 posts:
 
-[ ] self posts
-[ ] ...that are questions
-[ ] ...with empty selftext
-[ ] ...sorted by most common
+[x] self posts
+[x] ...that are questions
+[x] ...with empty selftext
+[x] ...sorted by most common
 
-[ ] ...with responses (as in [2] below)
-[ ] ...sorted by most common
+[x] post-response pairs (as in [2] below)
+[x] ...sorted by most common
 
 comments:
 
+[x] redo short comments with more info
+
 [1]
 
-  [ ] questions
-  [ ] ...sorted by most common
+  [x] questions
+  [x] ...sorted by most common
 
 [2]
 
-  [ ] comment-response pairs as table
-  [ ] ...where response is a question
-  [ ] ...sorted by most common
+  [x] comment-response pairs as table
+  [x] ...with counts, sorted by most common
+
+[x] create comments_with_responses_common
+[x] create posts_with_responses_common
+    [x] via posts_with_responses_cnt
+[x] normalize entries in both pair tables, add up counts
+    [x] comments_with_responses_common_norm
+    [x] posts_with_responses_common_norm
+[-] redo without filter of count > 1
+[x] normalize with_responses_cnt
+
+[x] figure out how to use biquery api from python
+[x] query `posts_with_responses_cnt_norm` for posts that contain similar words
+    [x] run a simple query on posts_with_responses_cnt_norm from python
+    [x] parse results
+    [x] sort results by question length
+
+[x] wrap in loop
+[x] color output (show q + a)
+[x] strip newlines from output
+[x] remove stopwords and punctuation from query
+[x] block most offensive results
+[x] sort responses by how similar the questions are using word2vec
+[x] use upvoting to break ties
+[x] try returning only questions
+
+[ ] also try with comments?
